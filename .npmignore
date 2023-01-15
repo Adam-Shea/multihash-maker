@@ -1,0 +1,5 @@
+/lib/
+/tests/
+/.github/
+/tests/
+babel.config.js
