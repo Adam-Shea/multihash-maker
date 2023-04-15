@@ -1,6 +1,6 @@
 {
 	"name": "multihash-maker",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Multihash Maker is a simple way to create multihashes with no external dependencies.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
