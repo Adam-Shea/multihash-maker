@@ -8,16 +8,17 @@ npm install multihash-maker
 ```
 ## Usage
 ```typescript
-import multiHashMaker from 'multihash-maker';
+import { createMultiHash, parseMultiHash } from '../lib/index';
 
-multiHashMaker('Hello World!', 'sha256')
+createMultiHash('Hello World!', 'sha256')
 // Returns '22041dd7b6443542e75701aa98a0c235951a28a0d851b11564d20022ab11d2589a8'
-```
-```javascript
-const multiHashMaker = require('multihash-maker')
 
-multiHashMaker.createMultiHash('Hello World!', 'sha256')
-// Returns '22041dd7b6443542e75701aa98a0c235951a28a0d851b11564d20022ab11d2589a8'
+parseMultiHash('11148a173fd3e32c0fa78b90fe42d305f202244e2739')
+// Returns {
+      length: 20,
+      hashFunction: "sha1",
+      hash: "8a173fd3e32c0fa78b90fe42d305f202244e2739"
+    }
 ```
 
 ## Tests
